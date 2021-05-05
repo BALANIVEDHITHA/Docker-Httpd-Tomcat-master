@@ -13,7 +13,7 @@ ADD worker.properties /etc/libapache2-mod-jk/workers.properties
 
 ADD jk.conf /etc/apache2/mods-available/jk.conf
 
-VOLUME ["/var/log/apache2"]
+#VOLUME ["/var/log/apache2"]
 
 EXPOSE 80 443
 
