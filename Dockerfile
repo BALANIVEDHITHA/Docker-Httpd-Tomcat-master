@@ -5,6 +5,10 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get update && apt-get install -y --no-install-recommends apache2 libapache2-mod-jk
 
+RUN a2enmod proxy
+
+RUN a2enmod proxy_http
+
 ADD apache2.conf /etc/apache2/apache2.conf
 
 ADD 000-default.conf /etc/apache2/sites-enabled/000-default.conf
