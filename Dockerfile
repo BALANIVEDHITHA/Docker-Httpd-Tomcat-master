@@ -1,6 +1,6 @@
 FROM httpd:latest
 
-ADD apache2.conf /usr/local/apache2/conf/httpd.conf
+ADD httpd.conf /usr/local/apache2/conf/httpd.conf
 
 #EXPOSE 80 443
 
